@@ -1,0 +1,40 @@
+name: taxigo_flutter
+description: TaxiGo student mini-capstone built with Flutter and Dart.
+publish_to: none
+version: 1.0.0+1
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.3.2
+  intl: ^0.19.0
+  http: ^1.2.0
+  flutter_svg: ^2.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: TaxiGo
+      fonts:
+        - asset: assets/fonts/TaxiGo-Regular.ttf
+        - asset: assets/fonts/TaxiGo-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/TaxiGo-Bold.ttf
+          weight: 700
+    - family: TaxiGoDisplay
+      fonts:
+        - asset: assets/fonts/TaxiGoDisplay-Regular.ttf
+        - asset: assets/fonts/TaxiGoDisplay-Bold.ttf
+          weight: 700
+
+  assets:
+    - assets/images/taxi_logo.svg
+    - assets/images/ic_tip.svg
